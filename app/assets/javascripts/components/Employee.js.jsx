@@ -12,7 +12,7 @@ class Employee extends React.Component {
           </div>
           <div className="card-action center">
             <button onClick={ () => this.props.delete(this.props.id)} className="btn red">Delete</button>
-            <a href=`/employee/${this.props.id}` <button className="btn blue">Show</button>>
+            <a href={`/employee/${this.props.id}`}><button className="btn">Show</button></a>
           </div>
         </div>
       </div> 
