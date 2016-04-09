@@ -83,11 +83,11 @@ class Products extends React.Component {
         <div className="row">
           <div className="add-product-div col s12 m4 offset-m1">
             <h5>Add New Product</h5>
-            <form onSubmit={this.addProduct} className="product-form">
-              <input type="text" ref="name" placeholder="Name" />
-              <input type="text" ref="description" placeholder="Description" />
-              <input type="text" ref="price" placeholder="Price" />
-              <input type="text" ref="qoh" placeholder="Quantity On Hand" />
+            <form onSubmit={this.addProduct} className="product-form" required={true}>
+              <input type="text" ref="name" placeholder="Name" required={true} />
+              <input type="text" ref="description" placeholder="Description" required={true} />
+              <input type="text" ref="price" placeholder="Price" required={true} />
+              <input type="text" ref="qoh" placeholder="Quantity On Hand" required={true} />
               <input type="submit" className="btn" name="Submit" />
             </form>
           </div> 
