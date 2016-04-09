@@ -13,4 +13,6 @@ Rails.application.routes.draw do
 
   get '/get_schedules', to: 'schedules#get_schedules'
 
+  get '/shifts/:id', to: 'shifts#show'
+
 end
