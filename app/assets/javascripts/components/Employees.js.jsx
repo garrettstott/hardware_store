@@ -18,7 +18,7 @@ class Employees extends React.Component{
     });
   }
 
-  addEmployee(employee) {
+  addEmploy(employee) {
     this.setState({ employees: [employee, ...this.state.employees]});
   }
 
@@ -28,7 +28,7 @@ class Employees extends React.Component{
     });
     return(
       <div className="row">
-        <NewBoard addBoard={this.addEmployee} />
+        <NewEmployee addEmployee={this.addEmployee} />
         <h2 className="center">Employee</h2>
         {employees}
       </div>
