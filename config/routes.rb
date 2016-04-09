@@ -11,4 +11,6 @@ Rails.application.routes.draw do
 
   get '/products/product_search', to: 'products#product_search'
 
+  get '/get_schedules', to: 'schedules#get_schedules'
+
 end
