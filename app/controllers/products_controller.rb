@@ -25,7 +25,12 @@ class ProductsController < ApplicationController
   end
 
   def product_search
-    @products = Product.where("lower(products.name) like ?", "%#{params[:term].downcase}%")
+    term = "%#{params[:term].downcase}%"
+    @products = Product.where("lower(products.name) LIKE ? OR
+                              lower(products.description)::char LIKE ? OR
+                              (products.price)::char LIKE ? OR
+                              (products.qoh)::char LIKE ?",
+                              term, term, term, term )
     render json: @products
   end
 
