@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   }
 
   resources :schedules
-  resources :products
+  resources :products, except: :show
+
+  get '/products/product_search', to: 'products#product_search'
 
 end
