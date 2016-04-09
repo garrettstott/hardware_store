@@ -1,4 +1,4 @@
-class Inventory extends React.Component {
+class Schedule extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -6,7 +6,7 @@ class Inventory extends React.Component {
   render() {
     return(
       <div>
-        <h1>Inventory</h1>
+        <h1>Schedule</h1>
       </div>
     );
   }

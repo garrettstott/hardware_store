@@ -1,4 +1,4 @@
-class Home extends React.Component {
+class Products extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -6,7 +6,7 @@ class Home extends React.Component {
   render() {
     return(
       <div>
-        <h1>Hardware Inc</h1>
+        <h1>Inventory</h1>
       </div>
     );
   }
