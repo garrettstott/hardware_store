@@ -1,7 +1,11 @@
 class ShiftsController < ApplicationController
 
   def index
-    @shifts = Employee.find(params[:employee_id]).shifts 
+  end
+
+
+  def show
+    @shifts = Employee.find(params[:id]).shifts 
   end
 
   def create
