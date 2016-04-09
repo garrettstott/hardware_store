@@ -6,7 +6,11 @@ class Home extends React.Component {
   render() {
     return(
       <div>
-        <h1>Hardware Inc</h1>
+        <h1 className="center">Hardware Inc</h1>
+        <div className="center">
+          <a href="/schedules"><button className="btn">Schedule</button></a>
+          <a href="/products"><button className="btn">Inventory</button></a>
+        </div>
       </div>
     );
   }
